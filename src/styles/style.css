@@ -1,0 +1,12 @@
+.page-header .btn {
+    margin-left: 20px;
+}
+
+.add-invoiceItem-btn {
+    left: -20px;
+    top: 25px;
+}
+
+.btn-toolbar button {
+    margin-left: 5px;
+}
