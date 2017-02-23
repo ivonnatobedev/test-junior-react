@@ -13,12 +13,12 @@ export const customers = {
   },
   address: {
     placeHolder: 'Enter address',
-    helpBlock: 'Name must be at between 10 to 15 letters',
+    helpBlock: 'Address must be at between 10 to 15 letters',
     label: 'Address'
   },
   phone: {
     placeHolder: 'Enter phone',
-    helpBlock: 'Name must be 10 digits',
+    helpBlock: 'Phone must be 10 digits',
     label: 'Phone'
   }
 };
