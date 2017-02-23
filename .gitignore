@@ -1,9 +1,6 @@
 # Dependency directory
 node_modules
 
-#dist folder
-public
-
 #Webstorm metadata
 .idea
 
