@@ -20,7 +20,7 @@ class InvoicesNew extends Component {
     this.onCreate = this.onCreate.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { customersList, customersActions, productsList, productsActions } = this.props;
     if(!customersList.length) {
       customersActions.getCustomersAsync();

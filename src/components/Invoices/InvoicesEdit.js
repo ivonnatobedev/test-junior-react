@@ -20,7 +20,7 @@ class InvoicesEdit extends Component {
     this.onEdit = this.onEdit.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { customersList, customersActions, productsList, productsActions, invoicesActions, params } = this.props;
     if(!customersList.length) {
       customersActions.getCustomersAsync();

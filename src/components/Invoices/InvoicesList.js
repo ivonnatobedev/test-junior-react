@@ -18,7 +18,7 @@ class InvoicesList extends Component {
     this.onDelete = this.onDelete.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { invoicesActions, invoicesList, customersList, customersActions } = this.props;
     if(!invoicesList.length) {
       invoicesActions.getInvoicesAsync();
@@ -75,7 +75,7 @@ class InvoicesList extends Component {
             invoicesList.map((item, key) => {
               return(
                 <InvoicesListItem
-                  key={key}
+                  key={item.id}
                   index={key+1}
                   item={item}
                   customersList={customersList}

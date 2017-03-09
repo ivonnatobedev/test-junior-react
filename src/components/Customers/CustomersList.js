@@ -19,7 +19,7 @@ class CustomersList extends Component {
     this.onEdit = this.onEdit.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const { customersActions } = this.props;
     customersActions.getCustomersAsync()
   }
@@ -118,7 +118,7 @@ class CustomersList extends Component {
               customersList.map((item, key) => {
                 return(
                   <CustomersListItem
-                    key={key}
+                    key={item.id}
                     index={key + 1}
                     item={item}
                     onShowModalDelete={this.toggleModalDelete}

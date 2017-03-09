@@ -1,4 +1,4 @@
-#volt-junior-react
+#test-junior-react
 
 ##ReactJS test spa
 
